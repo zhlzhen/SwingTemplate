@@ -6,7 +6,6 @@ import java.util.TreeMap;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-import uap.xbrl.xpeimpl.dimension.dimensionByDts.MemberItem;
 
 public class XBRLTree extends JTree {
 
@@ -20,7 +19,7 @@ public class XBRLTree extends JTree {
 		this.addTreeSelectionListener(new XBRLTreeSelectListener());
 	}
 
-	//直接构建一棵树
+	//鐩存帴鏋勫缓涓�５鏍�
 	public XBRLTree(DefaultMutableTreeNode node) {
 
 		super(new XBRLTreeModel(node));
@@ -28,12 +27,12 @@ public class XBRLTree extends JTree {
 		this.addTreeSelectionListener(new XBRLTreeSelectListener());
 	}
 
-	//更新数据
+	//鏇存柊鏁版嵁
 	public void setData(TreeMap<String, List<MemberItem>> listDefinitions) {
 		this.clearSelection();
 		treeModel = new XBRLTreeModel(listDefinitions);
 		this.setModel(treeModel);
-		//根节点隐藏显示
+		//鏍硅妭鐐归殣钘忔樉绀�
 		this.setRootVisible(false);
 		this.repaint();
 	}

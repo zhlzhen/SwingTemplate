@@ -12,8 +12,6 @@ import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.MutableTreeNode;
 import javax.swing.tree.TreeNode;
 
-import uap.xbrl.xpeimpl.dimension.dimensionByDts.MemberItem;
-
 /**
  * @author zhailzh
  *

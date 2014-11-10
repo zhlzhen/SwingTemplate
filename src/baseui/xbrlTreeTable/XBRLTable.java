@@ -1,12 +1,8 @@
 package baseui.xbrlTreeTable;
 
-import java.util.Enumeration;
-
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.tree.DefaultMutableTreeNode;
-
-import uap.xbrl.xpeimpl.dimension.dimensionByDts.MemberItem;
 
 public class XBRLTable extends JTable{
 
@@ -16,12 +12,12 @@ public class XBRLTable extends JTable{
 		super(dm);
 	}
 	
-	//根据RoleType下的数据结构，来构建这张表
+	//鏍规嵁RoleType涓嬬殑鏁版嵁缁撴瀯锛屾潵鏋勫缓杩欏紶琛�
 	public XBRLTable(String roleType, DefaultMutableTreeNode node) {
 		XBRLTableModel model = new XBRLTableModel(roleType,node);
 	}
 
-	//重写table的表头
+	//閲嶅啓table鐨勮〃澶�
 	@Override
     protected XBRLGroupTableHeader createDefaultTableHeader() {
         return new XBRLGroupTableHeader(columnModel);

@@ -6,7 +6,7 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-import uap.xbrl.xpeimpl.dimension.dimensionByDts.MemberItem;
+import baseui.tree.MemberItem;
 
 public class XBRLTableModel extends  DefaultTableModel {
 

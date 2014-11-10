@@ -6,7 +6,6 @@ import javax.swing.BorderFactory;
 import javax.swing.JTabbedPane;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-import mainpage.table.InstanceTablePanel;
 
 import baseui.tabbedPanel.DimensionTablePanel;
 
@@ -14,20 +13,20 @@ public class XBRLSimpleTabbedPanel extends JTabbedPane {
 
 	private static final long serialVersionUID = 3832738892903616055L;
 	
-	private InstanceTablePanel instanceTablepanel = null;
+//	private InstanceTablePanel instanceTablepanel = null;
 	
 	private DimensionTablePanel  dimensionTablePanel = null;
 	
 	public XBRLSimpleTabbedPanel(){
-		if(instanceTablepanel == null){
-			instanceTablepanel = new InstanceTablePanel();
-		}
+//		if(instanceTablepanel == null){
+//			instanceTablepanel = new InstanceTablePanel();
+//		}
 		
 		if(dimensionTablePanel == null){
 			dimensionTablePanel = new DimensionTablePanel();
 		}
 		
-		add("展示表",instanceTablepanel);
+//		add("展示表",instanceTablepanel);
 		setBorder(BorderFactory.createEmptyBorder(2, 0, 0, 0));
 		add("维度表" ,dimensionTablePanel);
 		setTabComponentAt(0, new ButtonTabSimpleComponent(this));
@@ -35,9 +34,9 @@ public class XBRLSimpleTabbedPanel extends JTabbedPane {
 	}
 
 	public void addTabbedPanel(String roleType, DefaultMutableTreeNode node) {
-		// 展示这张表
-		System.out.println("展示这张表：" + roleType);
-		this.instanceTablepanel.addInstanceTable(roleType,node);
+		// 灞曠ず杩欏紶琛�
+		System.out.println("灞曠ず杩欏紶琛細" + roleType);
+//		this.instanceTablepanel.addInstanceTable(roleType,node);
 		
 		
 	}

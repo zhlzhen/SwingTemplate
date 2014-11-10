@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/baseui/tabbedPanel/simple/XBRLSimpleTabbedPanel.java=UTF-8
+encoding//src/baseui/tree/XBRLTree.java=UTF-8
+encoding//src/baseui/tree/XBRLTreeSelectListener.java=UTF-8
+encoding//src/baseui/xbrlTreeTable/XBRLTable.java=UTF-8
 encoding//src/util/ImageManager.java=UTF-8

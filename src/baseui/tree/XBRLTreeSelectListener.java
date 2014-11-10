@@ -3,15 +3,12 @@ package baseui.tree;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.DefaultTreeSelectionModel;
-
-import model.InstanceModelData;
 
 public class XBRLTreeSelectListener implements TreeSelectionListener {
 
 	@Override
 	public void valueChanged(TreeSelectionEvent e) {
-		//增加限制，点击某张表的表头的时候，才会出现绘表的情况
+		//澧炲姞闄愬埗锛岀偣鍑绘煇寮犺〃鐨勮〃澶寸殑鏃跺�锛屾墠浼氬嚭鐜扮粯琛ㄧ殑鎯呭喌
 		Object newselect = e.getNewLeadSelectionPath().getLastPathComponent();
 		if(newselect instanceof DefaultMutableTreeNode){
 			DefaultMutableTreeNode selectNode = (DefaultMutableTreeNode) newselect;
